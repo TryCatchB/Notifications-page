@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 30px;
+  background-color: var(--very-light-grayish-blue);
+}
+
+/* ******************* */
+
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+
+.content {
+  padding: 25px;
+}
+
+.row-notifications {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.notifications {
+  display: flex;
+  gap: 12px;
+  color: var(--very-dark-blue);
+
+  & span {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 0px 10px;
+    color: var(--white);
+    background-color: var(--blue);
+  }
+}
+
+.text {
+  color: var(--dark-grayish-blue);
+}
+
+.row-posts {
+}
+
+.post {
+  border-radius: 10px;
+  &:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  .post__content {
+    display: flex;
+    padding: 20px;
+  }
+
+  .post__content_wrap {
+    flex-wrap: wrap;
+  }
+
+  .post__image {
+    max-width: 50px;
+    margin-right: 20px;
+
+    & img {
+      max-width: 100%;
+    }
+  }
+
+  .post__info-items {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .post__user-name {
+    font-weight: 800;
+    color: var(--very-dark-blue);
+  }
+
+  .post__action {
+    color: var(--grayish-blue);
+
+    & a {
+    }
+  }
+
+  .post__time {
+    color: var(--grayish-blue);
+  }
+
+  .post__message {
+    max-width: 590px;
+    border-radius: 5px;
+    margin-left: auto;
+    padding: 15px;
+    color: var(--dark-grayish-blue);
+    border: 1px solid var(--grayish-blue);
+  }
+
+  .post__liked-info {
+  }
+}
+
+.background {
+  background-color: var(--very-light-grayish-blue);
+}
+
+.circle_red {
+  &::after {
+    content: "";
+    font-weight: 800;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--red);
+  }
+}
