@@ -21,7 +21,7 @@
       <div class="content">
         <div class="row-notifications">
           <h3 class="notifications">Notifications <span>3</span></h3>
-          <p class="text">Mark all as read</p>
+          <button type="button" class="text">Mark all as read</button>
         </div>
         <div class="row-posts">
           <div class="post background">
@@ -31,10 +31,10 @@
               </div>
               <div class="post__info">
                 <div class="post__info-items circle_red">
-                  <p class="post__user-name">Mark Webber</p>
+                  <a href="#" class="post__user-name">Mark Webber</a>
                   <p class="post__action">
                     reacted to your recent post
-                    <a href="#">My first tournament today!</a>
+                    <a href="#"> My first tournament today!</a>
                   </p>
                 </div>
                 <p class="post__time">1m ago</p>
@@ -48,7 +48,7 @@
               </div>
               <div class="post__info">
                 <div class="post__info-items circle_red">
-                  <p class="post__user-name">Angela Gray</p>
+                  <a href="#" class="post__user-name">Angela Gray</a>
                   <p class="post__action">followed you</p>
                 </div>
                 <p class="post__time">5m ago</p>
@@ -65,7 +65,7 @@
               </div>
               <div class="post__info">
                 <div class="post__info-items circle_red">
-                  <p class="post__user-name">Jacob Thompson</p>
+                  <a href="#" class="post__user-name">Jacob Thompson</a>
                   <p class="post__action">
                     has joined your group
                     <a href="#">Chess Club</a>
@@ -76,20 +76,20 @@
             </div>
           </div>
           <div class="post">
-            <div class="post__content post__content_wrap">
-              <div class="post__image">
-                <img
-                  src="assets/images/avatar-rizky-hasanuddin.webp"
-                  alt="Image"
-                />
-              </div>
-              <div class="post__info">
+            <div class="post__content post__content_direction">
+              <div class="post__info post__info_flex">
+                <div class="post__image">
+                  <img
+                    src="assets/images/avatar-rizky-hasanuddin.webp"
+                    alt="Image"
+                  />
+                </div>
                 <div class="post__info-items">
-                  <p class="post__user-name">Rizky Hasanuddin</p>
+                  <a href="#" class="post__user-name">Rizky Hasanuddin</a>
                   <p class="post__action">sent you a private message</p>
                 </div>
-                <p class="post__time">5 days ago</p>
               </div>
+              <p class="post__time post__time_margin">5 days ago</p>
               <p class="post__message">
                 Hello, thanks for setting up the Chess Club. I've been a member
                 for a few weeks now and I'm already having lots of fun and
@@ -105,9 +105,9 @@
                   alt="Image"
                 />
               </div>
-              <div class="post__info">
+              <div class="post__info post__info_modify">
                 <div class="post__info-items">
-                  <p class="post__user-name">Kimberly Smith</p>
+                  <a href="#" class="post__user-name">Kimberly Smith</a>
                   <p class="post__action">commented on your picture</p>
                 </div>
                 <p class="post__time">1 week ago</p>
@@ -127,7 +127,7 @@
               </div>
               <div class="post__info">
                 <div class="post__info-items">
-                  <p class="post__user-name">Nathan Peterson</p>
+                  <a href="#" class="post__user-name">Nathan Peterson</a>
                   <p class="post__action">
                     reacted to your recent post
                     <a href="#"
@@ -139,8 +139,27 @@
               </div>
             </div>
           </div>
+          <div class="post">
+            <div class="post__content">
+              <div class="post__image">
+                <img src="assets/images/avatar-anna-kim.webp" alt="Image" />
+              </div>
+              <div class="post__info">
+                <div class="post__info-items">
+                  <a href="#" class="post__user-name">Anna Kim</a>
+                  <p class="post__action">
+                    left the group
+                    <a href="#">Chess Club</a>
+                  </p>
+                </div>
+                <p class="post__time">2 weeks ago</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <script src="JS/app.js"></script>
   </body>
 </html>
