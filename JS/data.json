@@ -1,5 +1,6 @@
 [
   {
+    "type": "react",
     "image": "assets/images/avatar-mark-webber.webp",
     "userName": "Mark Webber",
     "action": {
@@ -9,6 +10,7 @@
     "time": "1m ago"
   },
   {
+    "type": "follow",
     "image": "assets/images/avatar-angela-gray.webp",
     "userName": "Angela Gray",
     "action": {
@@ -17,6 +19,7 @@
     "time": "1m ago"
   },
   {
+    "type": "join",
     "image": "assets/images/avatar-jacob-thompson.webp",
     "userName": "Jacob Thompson",
     "action": {
@@ -26,24 +29,27 @@
     "time": "1 day ago"
   },
   {
+    "type": "private",
     "image": "assets/images/avatar-rizky-hasanuddin.webp",
     "userName": "Rizky Hasanuddin",
     "action": {
       "type": "sent you a private message",
-      "itemMessage": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
+      "item": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
     },
     "time": "5 days ago"
   },
   {
+    "type": "comment",
     "image": "assets/images/avatar-kimberly-smith.webp",
     "userName": "Kimberly Smith",
     "action": {
       "type": "commented on your picture",
-      "itemImage": "assets/images/image-chess.webp"
+      "likedInfo": "assets/images/image-chess.webp"
     },
     "time": "1 week ago"
   },
   {
+    "type": "react",
     "image": "assets/images/avatar-nathan-peterson.webp",
     "userName": "Nathan Peterson",
     "action": {
@@ -53,6 +59,7 @@
     "time": "2 weeks ago"
   },
   {
+    "type": "leave",
     "image": "assets/images/avatar-anna-kim.webp",
     "userName": "Anna Kim",
     "action": {
