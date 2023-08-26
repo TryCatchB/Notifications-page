@@ -15,16 +15,20 @@ export class Notification {
                 <div class="post__info-items ${
                   this.positionItem < 3 ? "circle_red" : ""
                 }">
-                  <a href="#" class="post__user-name">${this.notif.userName}</a>
-                  <p class="post__action">
-                    ${this.notif.action.type}
 
+                  <span href="#" class="post__user-name">${
+                    this.notif.userName
+                  }</span>
+
+                  ${this.notif.action.type}
+
+                  <span class="post__action">
                     ${
                       this.notif.action.item
                         ? `<a href="#">${this.notif.action.item}</a>`
                         : ""
                     }
-                  </p>
+                  </span>
                 </div>
               <p class="post__time">${this.notif.time}</p>
             </div>
@@ -47,11 +51,16 @@ export class NotificationWithMessage extends Notification {
                 <div class="post__info-items ${
                   this.positionItem < 3 ? "circle_red" : ""
                 }">
-                  <a href="#" class="post__user-name">${this.notif.userName}</a>
-                  <p class="post__action">${this.notif.action.type}</p>
+
+                  <span href="#" class="post__user-name">${
+                    this.notif.userName
+                  }</span>
+
+                  <span class="post__action">${this.notif.action.type}</span>
+
+                   <p class="post__time">${this.notif.time}</p>
                 </div>
               </div>
-              <p class="post__time post__time_margin">${this.notif.time}</p>
               <p class="post__message">
                 ${this.notif.action.item}
               </p>

@@ -100,6 +100,10 @@ body {
   .post__info_flex {
     display: flex;
     gap: 0.9375rem;
+
+    &:not(:last-child) {
+      margin-bottom: 0.625rem;
+    }
   }
 
   .post__image {
@@ -110,10 +114,7 @@ body {
   }
 
   .post__info-items {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.4375rem;
+    display: inline-block;
   }
 
   .post__user-name {
@@ -132,14 +133,6 @@ body {
 
   .post__time {
     color: var(--grayish-blue);
-  }
-
-  .post__time_margin {
-    margin-left: 4.125rem;
-
-    &:not(:last-child) {
-      margin-bottom: 0.9375rem;
-    }
   }
 
   .post__message {
@@ -170,6 +163,7 @@ body {
 
 .circle_red {
   &::after {
+    display: block;
     content: "";
     font-weight: 800;
     width: 0.4375rem;
