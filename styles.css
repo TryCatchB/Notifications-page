@@ -78,6 +78,7 @@ body {
 
 .post {
   border-radius: 0.625rem;
+  
   &:not(:last-child) {
     margin-bottom: 0.4375rem;
   }
@@ -162,9 +163,14 @@ body {
 }
 
 .circle_red {
+  position: relative;
+
   &::after {
+    position: absolute;
     display: block;
     content: "";
+    top: 10px;
+    right: -13px;
     font-weight: 800;
     width: 0.4375rem;
     height: 0.4375rem;
@@ -198,8 +204,7 @@ body {
     }
   }
 
-  .text,
-  .post__user-name {
+  :is(.text, .post__user-name) {
     &:hover {
       color: var(--blue);
     }
